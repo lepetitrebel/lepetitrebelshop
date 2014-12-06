@@ -1,0 +1,32 @@
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-2">
+  <ul class="list-group">
+  <li class="list-group-item"><a href="<%= products_url %>"> all </a></li>        
+  <% @categories.each do |category| %>
+
+  <li class="list-group-item"><a href="<%= products_url category_id: category.id %>"><%= category.name %></a></li>
+  <% end %>
+  </ul>
+  </div>
+
+  <div class="col-md-10">
+  <% @products.each do |product| %>
+       <div class="products">
+        <a href="<%= product.shop_url %>"><img src="<%= product.image_url %>"></a>
+        <a href="<%= product.shop_url %>"><%= product.description %></a>
+        <a href="<%= product.shop_url %>">Find it here</a>
+        <%= link_to 'Show', product %>
+        <%= link_to 'Edit', edit_product_path(product) %>
+       <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+         </div>
+    <% end %>
+  </div>
+</div>
+
+</div>
+
+<br>
+<div style="clear: both;"></div>
+
+<%= link_to 'New Product', new_product_path %>

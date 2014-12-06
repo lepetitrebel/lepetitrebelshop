@@ -1,0 +1,9 @@
+.products {
+float: left;
+width: 261px;
+margin: 10px;
+}
+
+.products:nth-child(3n+1) {
+clear: both;
+}
