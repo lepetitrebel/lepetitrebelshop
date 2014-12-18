@@ -2,10 +2,10 @@
 <div class="row">
   <div class="col-md-2">
   <ul class="list-group">
-  <li class="list-group-item"><a href="<%= products_url %>"> all </a></li>        
+  <li class="list-group-item cat-filter"><a href="<%= products_url %>"> all </a></li>
   <% @categories.each do |category| %>
 
-  <li class="list-group-item"><a href="<%= products_url category_id: category.id %>"><%= category.name %></a></li>
+  <li class="list-group-item cat-filter"><a href="<%= products_url category_id: category.id %>"><%= category.name %></a></li>
   <% end %>
   </ul>
   </div>

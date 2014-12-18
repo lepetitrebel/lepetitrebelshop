@@ -18,5 +18,14 @@
  font-weight: bold;
  color: black;
  text-align: center;
- margin: 24px; 
+ margin: 24px;
+ }
+
+ .cat-filter, .products {
+ font-family: monospace;
+ }
+
+ .navbar-default {
+ font-family: monospace;
+ font-weight: bold;
  }
