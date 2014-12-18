@@ -1,21 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class='col-md-6'>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+ <img class='bigimage' src= '<%= @product.image_url %>'>
 
-<p>
-  <strong>Shop url:</strong>
-  <%= @product.shop_url %>
-</p>
+</div>
 
-<p>
+<div class='col-md-6'>
+   <p>
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
 
-<p>
+    <p>
+  <strong>Shop url:</strong>
+  <%= @product.shop_url %>
+</p>
+
+ <p>
   <strong>Category:</strong>
   <%= @product.category.name %>
 </p>
@@ -24,6 +24,17 @@
   <strong>Name:</strong>
   <%= @product.name %>
 </p>
+</div>
+
+<p id="notice"><%= notice %></p>
+
+
+
+
+
+
+
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

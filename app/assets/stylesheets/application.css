@@ -29,3 +29,7 @@
  font-family: monospace;
  font-weight: bold;
  }
+
+ .bigimage {
+ width: 90%;
+ }
