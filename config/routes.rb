@@ -1,4 +1,7 @@
 Gallery::Application.routes.draw do
+  get 'login' => 'users#login'
+  post 'login' => 'users#avocado'
+
   resources :categories
 
   resources :products
